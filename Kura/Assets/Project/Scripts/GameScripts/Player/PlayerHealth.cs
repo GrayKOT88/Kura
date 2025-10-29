@@ -14,8 +14,7 @@ public class PlayerHealth : MonoBehaviour, IHealthSystem
 
     private void Start()
     {
-        currentHealth = _settings.MaxHealth;
-        _healthBar.SetHealth(currentHealth);
+        ResetHealth();
     }
 
     public void TakeDamage(int damage)
@@ -30,6 +29,15 @@ public class PlayerHealth : MonoBehaviour, IHealthSystem
         {
             GameOver();
         }
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = _settings.MaxHealth;
+        _healthBar.SetHealth(currentHealth);
+        isGameOver = false;
+        _gameOverImage.SetActive(false);
+        _pauseButton.SetActive(true);
     }
 
     private void GameOver()

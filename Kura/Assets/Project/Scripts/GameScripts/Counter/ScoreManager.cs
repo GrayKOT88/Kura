@@ -29,5 +29,13 @@ public class ScoreManager : MonoBehaviour
         _ñounterTextFox.transform.DOKill(); 
         _ñounterTextFox.transform.localScale = Vector3.one;
         _ñounterTextFox.transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.3f);
-    }    
+    }
+
+    public void ResetScores()
+    {
+        _countChickens = 0;
+        _countFoxes = 0;
+        _ñounterText.text = " 0";
+        _ñounterTextFox.text = " 0";
+    }
 }

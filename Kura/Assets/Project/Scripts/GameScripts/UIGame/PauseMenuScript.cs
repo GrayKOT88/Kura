@@ -6,7 +6,7 @@ public class PauseMenuScript : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseGameMenu;
     [SerializeField] private GameObject _rateGameButton;
-       
+
     public void RateGameButton()
     {
         YandexGame.ReviewShow(true);
@@ -25,13 +25,5 @@ public class PauseMenuScript : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
-    }
-    public void Restart() 
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(1);
-        Progress.PlayerData.eatenChick = 0;
-        Progress.PlayerData.saveChick = 0;
-        Progress.SaveData();
-    }
+    }    
 }

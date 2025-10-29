@@ -4688,7 +4688,7 @@ Transform:
   m_GameObject: {fileID: 430983542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.1, y: 0.03, z: -63.84}
+  m_LocalPosition: {x: -40, y: 0.03, z: -60}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12210,8 +12210,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1025876763}
   - component: {fileID: 1025876762}
-  - component: {fileID: 1025876765}
+  - component: {fileID: 1025876766}
   - component: {fileID: 1025876764}
+  - component: {fileID: 1025876765}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -12330,6 +12331,18 @@ MonoBehaviour:
   _scoreSaver: {fileID: 938997856}
   _counter: {fileID: 938997852}
   _healthBar: {fileID: 1842220200}
+--- !u!114 &1025876766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025876761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459855ae4b13a324faa250f8372e0965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1042892702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6442067900683981980, guid: 5284e19d79f18ca43b024510c85409e2, type: 3}
@@ -15538,6 +15551,7 @@ GameObject:
   - component: {fileID: 1344156846}
   - component: {fileID: 1344156845}
   - component: {fileID: 1344156849}
+  - component: {fileID: 1344156850}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -15651,6 +15665,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseGameMenu: {fileID: 1722146235}
   _rateGameButton: {fileID: 528873773}
+--- !u!114 &1344156850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344156844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9c71cb7e45a754c85dffc0b389ee28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1345147380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19148,8 +19174,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1344156849}
-        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
+      - m_Target: {fileID: 1344156850}
+        m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:

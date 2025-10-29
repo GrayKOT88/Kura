@@ -35,6 +35,13 @@ public partial class SpawnManager : MonoBehaviour
         }
     }
 
+    public void ResetSpawning()
+    {
+        _chickCount = 0;
+        _waveNumber = 4;
+        StartWave();
+    }
+
     private void StartWave()
     {
         _chickSpawner.SpawnChickWave(_waveNumber);

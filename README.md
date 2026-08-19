@@ -44,10 +44,9 @@
 
 ## 🖼 Скриншоты
 
-![Геймплей](Screenshots/1.png)
-[Геймплей](Screenshots/2.png)
-!(Screenshots/3.png)
-(Screenshots/1.png)
+![](Assets/Screenshots/1.png)
+![](Assets/Screenshots/2.png)
+![](Assets/Screenshots/3.png)
 
 ---
 

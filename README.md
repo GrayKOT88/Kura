@@ -44,7 +44,10 @@
 
 ## 🖼 Скриншоты
 
-_Здесь будут изображения геймплея_
+![Геймплей](Screenshots/1.png)
+[Геймплей](Screenshots/2.png)
+!(Screenshots/3.png)
+(Screenshots/1.png)
 
 ---
 
